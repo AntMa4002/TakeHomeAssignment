@@ -1,0 +1,4 @@
+For this application, we will use Flask to perform an API call. In this case, Flask is preferred compared to FastAPI due to the small codebase required and many third-party libraries. Alongside this, FastAPI is very expensive and difficult to scale.
+
+
+Notes to add:
