@@ -1,4 +1,14 @@
-For this application, we will use Flask to perform an API call. In this case, Flask is preferred compared to FastAPI due to the small codebase required and many third-party libraries. Alongside this, FastAPI is very expensive and difficult to scale.
+Summary:
+This program implements the requests library to perform simple HTTP requests specifically the GET response to retrieve data in the form of a JSON 
+from the dog API. A SQLite database is then initialized(on the first run) and connected to by using a cursor to perform SQL commands in Python.
+The program then inserts the data retrieved from the dog API, into the breedsInfo table and then another table called sub_breed_count
+is created to calculate and insert the count of the number of sub-breeds in the sub-breed arrays that were attached to the JSON. Once the tables
+are created, a query is then executed to retrieve the number of sub-breeds for every breed and is then printed to the terminal.
 
+Configuration:
+- execute "pip3 install requests" in the directory of the file to install the requests library
+- unless sqlite3 is unavailable by default, "pip install sqlite3" can be executed
+- run the program by executing "python doglist.py"
 
 Notes to add:
+- to test if the tables are in fact created and then modified, delete the dog_breeds.db file and run the program once more
